@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<h1>Calcular peso IMC</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura,nombre){
+
+        imc = peso / (altura * altura);
+        imprimir("El IMC calculado de: " + nombre + " es: " + imc);
+    }
+    calcularImc(71,2, "Misael");
+    calcularImc(75,1.73, "Misania");
+
+</script>
